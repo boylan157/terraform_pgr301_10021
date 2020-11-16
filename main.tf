@@ -1,11 +1,12 @@
 resource "google_cloud_run_service" "default" {
   name     = "cloudrun-srv"
   location = "us-central1"
+  project = "pgr301-exam"
 
   template {
     spec {
       containers {
-        image = "gcr.io/cloudrun/hello"
+        image = "eu.gcr.io/pgr301-exam/pgr301_10021/devopsexam@sha256:58c96cad23ccfa03e4f12040f0848122e21b1876d2bf1bfff217229e79150984"
       }
     }
   }
