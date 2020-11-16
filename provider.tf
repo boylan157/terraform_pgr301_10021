@@ -1,6 +1,5 @@
 provider "google" {
-  credentials = "${file("service-account.json")}"
-  project     = "devopscube-demo"
+  project = "terraform-292215"
   region      = "us-central1"
   zone        = "us-central1-c"
-}
+}//
