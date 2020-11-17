@@ -10,6 +10,11 @@ resource "google_cloud_run_service" "default" {
       }
     }
   }
+
+traffic {
+  percent = 100
+  latest_revision = true
+}
 }
 
 data "google_iam_policy" "noauth" {
