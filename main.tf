@@ -1,5 +1,5 @@
 resource "google_cloud_run_service" "default" {
-  name     = "cloudrun-srv"
+  name     = "cloudrun-srv1"
   location = "us-central1"
   project = "pgr301-exam"
 
