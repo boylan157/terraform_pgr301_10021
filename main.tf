@@ -1,5 +1,5 @@
 resource "google_cloud_run_service" "default" {
-  name     = "terraformservice"
+  name     = "cloudrun-srv"
   location = "us-central1"
   project = "pgr301-exam"
 
