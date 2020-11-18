@@ -1,6 +1,6 @@
 resource "google_cloud_run_service" "default" {
   name     = "cloudrun-srv"
-  location = "europe"
+  location = "us-central1"
   project = "pgr301-exam"
 
   template {
