@@ -7,7 +7,7 @@ branches:
   only:
     - main
 before_install:
-  - openssl aes-256-cbc -K $encrypted_615cf7c1d162_key -iv $encrypted_615cf7c1d162_iv -in pgr301-exam-b0bef1aea48c.json.enc -out pgr301-exam-b0bef1aea48c.json -d
+  - openssl aes-256-cbc -K $encrypted_0e22ff5f343b_key -iv $encrypted_0e22ff5f343b_iv -in pgr301-exam-ad93aab2bdd9.json.enc -out pgr301-exam-ad93aab2bdd9.json -d
   - curl https://sdk.cloud.google.com | bash > /dev/null
   - source "$HOME/google-cloud-sdk/path.bash.inc"
   - gcloud auth activate-service-account --key-file=pgr301-exam-b0bef1aea48c.json
