@@ -6,7 +6,7 @@ resource "google_cloud_run_service" "default" {
   template {
     spec {
       containers {
-        image = "eu.gcr.io/pgr301-exam/pgr301_10021/devopsexam:latest_build"
+        image = "eu.gcr.io/pgr301-exam/pgr301_10021/devopsexam:eu.gcr.io/pgr301-exam/pgr301_10021/devopsexam@sha256:2daf60761205ea6437dba85d385ed2ad1e899f6394cb60359770c128a2d0ceec"
       }
     }
   }
