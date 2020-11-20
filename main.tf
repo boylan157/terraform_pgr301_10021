@@ -7,6 +7,10 @@ resource "google_cloud_run_service" "default" {
     spec {
       containers {
         image = "eu.gcr.io/pgr301-exam/pgr301_10021/devopsexam@sha256:2daf60761205ea6437dba85d385ed2ad1e899f6394cb60359770c128a2d0ceec"
+        env {
+          name = "LOGZ_TOKEN"
+          value = var.logz_token
+        }
       }
     }
   }
@@ -16,7 +20,7 @@ resource "google_cloud_run_service" "default" {
     latest_revision = true
   }
 }
-//
+
 data "google_iam_policy" "noauth" {
   binding {
     role = "roles/run.invoker"
