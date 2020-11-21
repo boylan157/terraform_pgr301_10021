@@ -1,5 +1,5 @@
 provider "statuscake" {
-  username = "postglennbechno"
+  username = "boylan157gmailcom"
 }
 
 resource "statuscake_test" "googlecloudruntest" {
