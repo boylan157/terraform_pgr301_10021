@@ -1,5 +1,5 @@
 resource "google_cloud_run_service" "default" {
-  name     = "terraformservicev4"
+  name     = "terraformservicev3"
   location = "europe-north1"
   project = "pgr301-exam"
 
